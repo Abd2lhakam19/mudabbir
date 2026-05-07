@@ -1,0 +1,213 @@
+@media (max-width: 1280px) {
+  aside {
+    width: 70px;
+    padding: 10px;
+  }
+
+  aside .coin {
+    padding: 10px;
+  }
+  aside .logo {
+    justify-content: center;
+  }
+  aside .coin i {
+    font-size: 15px;
+  }
+
+  aside .logo .logo-info {
+    display: none;
+  }
+  nav .nav-links li a {
+    display: none;
+  }
+  nav .nav-links li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+  }
+  .nav-links li i {
+    margin-left: 0;
+  }
+
+  aside h2 {
+    display: none;
+  }
+
+  .quick-actions li {
+    gap: 12px;
+    padding: 0;
+    margin-bottom: 15px;
+    justify-content: center;
+  }
+  .quick-actions li a {
+    display: none;
+  }
+  .quick-actions li .icon-wrapper {
+    padding: 10px;
+    font-size: 14px;
+  }
+  main {
+    margin-right: 70px;
+  }
+
+  .container {
+    grid-template-areas:
+      "management-profile management-profile management-profile management-profile management-profile management-profile management-profile management-profile management-profile management-profile management-profile management-profile"
+      "current-money current-money current-money current-money income income income income expences expences expences expences"
+      "current-money current-money current-money current-money income income income income expences expences expences expences"
+      "new-activites new-activites new-activites new-activites new-activites new-activites income-vs-expences income-vs-expences income-vs-expences income-vs-expences income-vs-expences income-vs-expences"
+      "new-activites new-activites new-activites new-activites new-activites new-activites income-vs-expences income-vs-expences income-vs-expences income-vs-expences income-vs-expences income-vs-expences"
+      "final-transactions final-transactions final-transactions final-transactions final-transactions final-transactions final-transactions final-transactions final-transactions final-transactions final-transactions final-transactions"
+      "final-transactions final-transactions final-transactions final-transactions final-transactions final-transactions final-transactions final-transactions final-transactions final-transactions final-transactions final-transactions"
+      "final-transactions final-transactions final-transactions final-transactions final-transactions final-transactions final-transactions final-transactions final-transactions final-transactions final-transactions final-transactions"
+      "final-transactions final-transactions final-transactions final-transactions final-transactions final-transactions final-transactions final-transactions final-transactions final-transactions final-transactions final-transactions"
+      "final-transactions final-transactions final-transactions final-transactions final-transactions final-transactions final-transactions final-transactions final-transactions final-transactions final-transactions final-transactions"
+      "monthly-pills monthly-pills monthly-pills monthly-pills monthly-pills monthly-pills account-summary account-summary account-summary account-summary account-summary account-summary"
+      "monthly-pills monthly-pills monthly-pills monthly-pills monthly-pills monthly-pills account-summary account-summary account-summary account-summary account-summary account-summary"
+      "monthly-pills monthly-pills monthly-pills monthly-pills monthly-pills monthly-pills account-summary account-summary account-summary account-summary account-summary account-summary"
+      "general-view general-view general-view general-view general-view general-view payment-methods payment-methods payment-methods payment-methods payment-methods payment-methods"
+      "general-view general-view general-view general-view general-view general-view payment-methods payment-methods payment-methods payment-methods payment-methods payment-methods"
+      "general-view general-view general-view general-view general-view general-view payment-methods payment-methods payment-methods payment-methods payment-methods payment-methods"
+      "general-view general-view general-view general-view general-view general-view payment-methods payment-methods payment-methods payment-methods payment-methods payment-methods"
+      "general-view general-view general-view general-view general-view general-view payment-methods payment-methods payment-methods payment-methods payment-methods payment-methods";
+  }
+}
+
+@media (max-width: 1024px) {
+  .money {
+    font-size: 24px;
+  }
+
+  .account-summary .account {
+    display: block;
+  }
+  .account-summary .account .bank-money {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+@media (max-width: 768px) {
+  aside {
+    display: none;
+  }
+  .management-profile {
+    padding: 10px;
+  }
+  .logo .logo-info h1 {
+    font-size: 24px;
+  }
+  .coin {
+    padding: 10px;
+  }
+
+  .coin i {
+    font-size: 1.25rem;
+  }
+
+  .logo .logo-info p {
+    font-size: 12px;
+  }
+  .management-profile .right-side .status {
+    font-size: 12px;
+  }
+  .management-profile .left-side .search,
+  .management-profile .left-side .notification {
+    padding: 5px;
+    font-size: 12px;
+  }
+
+  .management-profile .left-side .profile-info .info .name {
+    font-size: 12px;
+  }
+  .management-profile .left-side .profile-info .info .acc-type {
+    display: none;
+  }
+
+  main {
+    margin-right: 0;
+    padding: 15px;
+  }
+  .container {
+    grid-template-areas:
+      "management-profile management-profile management-profile management-profile management-profile management-profile management-profile management-profile management-profile management-profile management-profile management-profile"
+      "current-money current-money current-money current-money current-money current-money current-money current-money current-money current-money current-money current-money"
+      "current-money current-money current-money current-money current-money current-money current-money current-money current-money current-money current-money current-money"
+      "income income income income income income income income income income income income"
+      "income income income income income income income income income income income income"
+      "expences expences expences expences expences expences expences expences expences expences expences expences"
+      "expences expences expences expences expences expences expences expences expences expences expences expences"
+      "new-activites new-activites new-activites new-activites new-activites new-activites new-activites new-activites new-activites new-activites new-activites new-activites"
+      "new-activites new-activites new-activites new-activites new-activites new-activites new-activites new-activites new-activites new-activites new-activites new-activites"
+      "final-transactions final-transactions final-transactions final-transactions final-transactions final-transactions final-transactions final-transactions final-transactions final-transactions final-transactions final-transactions"
+      "final-transactions final-transactions final-transactions final-transactions final-transactions final-transactions final-transactions final-transactions final-transactions final-transactions final-transactions final-transactions"
+      "final-transactions final-transactions final-transactions final-transactions final-transactions final-transactions final-transactions final-transactions final-transactions final-transactions final-transactions final-transactions"
+      "final-transactions final-transactions final-transactions final-transactions final-transactions final-transactions final-transactions final-transactions final-transactions final-transactions final-transactions final-transactions"
+      "final-transactions final-transactions final-transactions final-transactions final-transactions final-transactions final-transactions final-transactions final-transactions final-transactions final-transactions final-transactions"
+      "monthly-pills monthly-pills monthly-pills monthly-pills monthly-pills monthly-pills monthly-pills monthly-pills monthly-pills monthly-pills monthly-pills monthly-pills"
+      "monthly-pills monthly-pills monthly-pills monthly-pills monthly-pills monthly-pills monthly-pills monthly-pills monthly-pills monthly-pills monthly-pills monthly-pills"
+      "general-view general-view general-view general-view general-view general-view general-view general-view general-view general-view general-view general-view"
+      "general-view general-view general-view general-view general-view general-view general-view general-view general-view general-view general-view general-view"
+      "general-view general-view general-view general-view general-view general-view general-view general-view general-view general-view general-view general-view"
+      "general-view general-view general-view general-view general-view general-view general-view general-view general-view general-view general-view general-view"
+      "general-view general-view general-view general-view general-view general-view general-view general-view general-view general-view general-view general-view"
+      "income-vs-expences income-vs-expences income-vs-expences income-vs-expences income-vs-expences income-vs-expences income-vs-expences income-vs-expences income-vs-expences income-vs-expences income-vs-expences income-vs-expences"
+      "income-vs-expences income-vs-expences income-vs-expences income-vs-expences income-vs-expences income-vs-expences income-vs-expences income-vs-expences income-vs-expences income-vs-expences income-vs-expences income-vs-expences"
+      "account-summary account-summary account-summary account-summary account-summary account-summary account-summary account-summary account-summary account-summary account-summary account-summary"
+      "account-summary account-summary account-summary account-summary account-summary account-summary account-summary account-summary account-summary account-summary account-summary account-summary"
+      "account-summary account-summary account-summary account-summary account-summary account-summary account-summary account-summary account-summary account-summary account-summary account-summary"
+      "payment-methods payment-methods payment-methods payment-methods payment-methods payment-methods payment-methods payment-methods payment-methods payment-methods payment-methods payment-methods"
+      "payment-methods payment-methods payment-methods payment-methods payment-methods payment-methods payment-methods payment-methods payment-methods payment-methods payment-methods payment-methods"
+      "payment-methods payment-methods payment-methods payment-methods payment-methods payment-methods payment-methods payment-methods payment-methods payment-methods payment-methods payment-methods"
+      "payment-methods payment-methods payment-methods payment-methods payment-methods payment-methods payment-methods payment-methods payment-methods payment-methods payment-methods payment-methods"
+      "payment-methods payment-methods payment-methods payment-methods payment-methods payment-methods payment-methods payment-methods payment-methods payment-methods payment-methods payment-methods";
+  }
+   .final-transactions .transaction-table{
+    overflow-x: auto;
+    scrollbar-width: thin;
+  }
+    .transaction-table table thead td,
+  .transaction-table table tbody td .name,
+  .transaction-table table tbody td .type,
+  .transaction-table table tbody td .date,
+  .transaction-table table tbody td .cost,
+  .transaction-table table tbody td .type-tr,
+  .transaction-table table tbody td .done {
+    font-size: 12px !important; 
+    line-height: 1.2; 
+  }
+  table td{
+    white-space: nowrap;
+  }
+  table{
+    min-width:500px;
+  }
+
+}
+
+@media (max-width: 640px) {
+  .management-profile {
+    display: block;
+  }
+  .management-profile .right-side {
+    /* display: block; */
+    align-items: center;
+    column-gap: 20px;
+  }
+  .management-profile .left-side .left-content {
+    width: 100%;
+    justify-content: space-between;
+    /* background-color: tomato; */
+  }
+  .management-profile .left-side .profile-info {
+    gap: 0;
+    justify-content: center;
+    padding: 10px;
+  }
+  .management-profile .left-side .profile-info .info .name {
+    display: none;
+  }
+
+ 
+}
