@@ -156,13 +156,14 @@ aside h2 {
 .quick-actions li {
   display: -webkit-box;
   display: -ms-flexbox;
+  justify-content: start;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   gap: 10px;
   /* background-color: tomato; */
-  padding: 15px;
+  padding: 15px 0px;
   -webkit-transition: all 300ms;
   -o-transition: all 300ms;
   transition: all 300ms;
@@ -1078,8 +1079,10 @@ table tbody .cost {
 }
 .income-vs-expences {
   -ms-grid-row: 17;
+  grid-row: 17;
   -ms-grid-row-span: 3;
   -ms-grid-column: 9;
+  grid-column: 9;
   -ms-grid-column-span: 7;
   grid-area: income-vs-expences;
   background-color: #fff;
