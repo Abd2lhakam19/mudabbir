@@ -1,7 +1,15 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 *,
 ::after,
 ::before {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0;
 }
 html {
@@ -38,24 +46,38 @@ aside {
   bottom: 0;
   padding: 25px 20px;
   border-left: 1px solid #e5e7eb;
-  box-shadow: -1px -1px #e5e7eb;
+  -webkit-box-shadow: -1px -1px #e5e7eb;
+          box-shadow: -1px -1px #e5e7eb;
 }
 
 .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 15px;
 }
 
 .coin {
+  background-image: -webkit-gradient(linear, left top, right top, from(#3b6bf2), to(#4865e4));
+  background-image: -o-linear-gradient(left, #3b6bf2, #4865e4);
   background-image: linear-gradient(to right, #3b6bf2, #4865e4);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   padding: 16px;
   border-radius: var(--border-radius);
   color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  box-shadow: 0px 4px 03px #3b6cf260;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0px 4px 03px #3b6cf260;
+          box-shadow: 0px 4px 03px #3b6cf260;
 }
 
 .coin i {
@@ -81,8 +103,13 @@ aside {
 }
 
 nav .nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 10px;
   font-size: 16px;
   font-weight: 600;
@@ -92,6 +119,8 @@ nav .nav-links {
 nav .nav-links li {
   padding: 12px;
   color: #6a7283;
+  -webkit-transition: background-color 200ms;
+  -o-transition: background-color 200ms;
   transition: background-color 200ms;
 }
 nav .nav-links li a {
@@ -125,27 +154,41 @@ aside h2 {
 }
 
 .quick-actions li {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 10px;
   /* background-color: tomato; */
   padding: 15px;
+  -webkit-transition: all 300ms;
+  -o-transition: all 300ms;
   transition: all 300ms;
 }
 
 .quick-actions li:hover {
   background-color: #fafafa;
   border-radius: 12px;
-  transform: translateX(3px);
+  -webkit-transform: translateX(3px);
+      -ms-transform: translateX(3px);
+          transform: translateX(3px);
 }
 
 .quick-actions li .icon-wrapper {
   padding: 13px;
   font-size: 16px;
   border-radius: var(--border-radius);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .text-send {
   color: var(--main-color);
@@ -193,12 +236,15 @@ main {
 }
 
 .container {
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr;
   grid-template-columns: repeat(12, 1fr);
+  -ms-grid-rows: auto;
   grid-template-rows: auto;
   gap: 20px;
   grid-auto-flow: row;
-  grid-template-areas:
+      grid-template-areas:
     "management-profile management-profile management-profile management-profile management-profile management-profile management-profile management-profile management-profile management-profile management-profile management-profile"
     "current-money  current-money  current-money  current-money  income income income income expences expences expences expences"
     "current-money  current-money  current-money  current-money  income income income income expences expences expences expences"
@@ -215,22 +261,40 @@ main {
 }
 
 .management-profile {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 23;
   grid-area: management-profile;
   padding: 20px;
   border-radius: 12px;
+  background-image: -webkit-gradient(linear, right top, left top, from(#f5f9fd), color-stop(#fdfeff), to(#f5f9fd));
+  background-image: -o-linear-gradient(right, #f5f9fd, #fdfeff, #f5f9fd);
   background-image: linear-gradient(to left, #f5f9fd, #fdfeff, #f5f9fd);
-  box-shadow:
+  -webkit-box-shadow:
+    1px 1px #e1e1e1,
+    -1px -1px #d7d7d7;
+          box-shadow:
     1px 1px #e1e1e1,
     -1px -1px #d7d7d7;
   border: 1px solid var(--border-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .management-profile .right-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  column-gap: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px;
 }
 
 .management-profile .right-side .status {
@@ -258,19 +322,31 @@ main {
 }
 
 .management-profile .left-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 15px;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .management-profile .left-side .left-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 10px;
 }
 .management-profile .left-side .left-content .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 10px;
 }
 .management-profile .left-side .search {
@@ -279,6 +355,8 @@ main {
   font-size: 14px;
   border-radius: 8px;
   border: 1px solid var(--border-color);
+  -webkit-transition: background-color 200ms;
+  -o-transition: background-color 200ms;
   transition: background-color 200ms;
 }
 .management-profile .left-side .notification {
@@ -287,6 +365,8 @@ main {
   font-size: 14px;
   border-radius: 8px;
   border: 1px solid var(--border-color);
+  -webkit-transition: background-color 200ms;
+  -o-transition: background-color 200ms;
   transition: background-color 200ms;
 }
 
@@ -295,18 +375,27 @@ main {
   background-color: #f3f4f6;
 }
 .management-profile .left-side .profile-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 10px;
   background-color: white;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 10px 12px;
   border-radius: var(--border-radius);
   border: 1px solid var(--border-color);
+  -webkit-transition: -webkit-box-shadow 500ms;
+  transition: -webkit-box-shadow 500ms;
+  -o-transition: box-shadow 500ms;
   transition: box-shadow 500ms;
+  transition: box-shadow 500ms, -webkit-box-shadow 500ms;
 }
 
 .management-profile .left-side .profile-info:hover {
-  box-shadow: 0px 1px 3px #626262;
+  -webkit-box-shadow: 0px 1px 3px #626262;
+          box-shadow: 0px 1px 3px #626262;
 }
 
 .management-profile .left-side .profile-info .info .name {
@@ -326,11 +415,16 @@ main {
 .management-profile .left-side .profile-info .pic img {
   width: 30px;
   height: 30px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 8px;
 }
 
 .current-money {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 7;
   grid-area: current-money;
   padding: 20px;
   background-color: #fff;
@@ -368,6 +462,10 @@ main {
   font-size: 12px;
 }
 .income {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 9;
+  -ms-grid-column-span: 7;
   grid-area: income;
   padding: 20px;
   background-color: #fff;
@@ -376,6 +474,10 @@ main {
 }
 
 .expences {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 17;
+  -ms-grid-column-span: 7;
   grid-area: expences;
   padding: 20px;
   background-color: #fff;
@@ -384,6 +486,10 @@ main {
 }
 
 .new-activites {
+  -ms-grid-row: 7;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 7;
   grid-area: new-activites;
   background-color: #fff;
   padding: var(--card-padding);
@@ -399,12 +505,16 @@ main {
 }
 
 .new-activites .create-new {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   background-color: #eff5ff;
   padding: 10px;
   border-radius: var(--border-radius);
   border-left: 4px solid #2e7cfd;
-  align-items: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   position: relative;
   margin-bottom: 10px;
 }
@@ -453,12 +563,16 @@ main {
 }
 
 .new-activites .add-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   background-color: #effcf5;
   padding: 10px;
   border-radius: var(--border-radius);
   border-left: 4px solid #73cc59;
-  align-items: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   position: relative;
   margin-bottom: 10px;
 }
@@ -491,6 +605,10 @@ main {
 }
 
 .monthly-pills {
+  -ms-grid-row: 11;
+  -ms-grid-row-span: 5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 7;
   grid-area: monthly-pills;
   text-align: center;
   background-color: #fff;
@@ -500,8 +618,12 @@ main {
 }
 
 .top-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-bottom: 10px;
 }
 
@@ -517,6 +639,8 @@ main {
   line-height: 20px;
   color: oklch(0.551 0.027 264.364);
   cursor: pointer;
+  -webkit-transition: color 200ms;
+  -o-transition: color 200ms;
   transition: color 200ms;
 }
 
@@ -542,12 +666,15 @@ main {
 
 .monthly-pills .container {
   /* height: 600px; */
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr;
   grid-template-columns: repeat(12, 1fr);
+  -ms-grid-rows: auto;
   grid-template-rows: auto;
   gap: 10px;
   grid-auto-flow: row;
-  grid-template-areas:
+      grid-template-areas:
     "internet internet internet internet internet internet electricity electricity electricity electricity electricity electricity"
     "internet internet internet internet internet internet electricity electricity electricity electricity electricity electricity"
     "phones phones phones phones phones phones netflix netflix netflix netflix netflix netflix"
@@ -559,12 +686,23 @@ main {
   border-radius: var(--border-radius);
   padding: 10px;
   border: 1px solid #bababa3a !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .internet {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 11;
   grid-area: internet;
 }
 
@@ -607,6 +745,10 @@ main {
   font-size: 14px;
 }
 .electricity {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 13;
+  -ms-grid-column-span: 11;
   grid-area: electricity;
 }
 
@@ -619,6 +761,10 @@ main {
 }
 
 .phones {
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 11;
   grid-area: phones;
 }
 
@@ -631,6 +777,10 @@ main {
 }
 
 .netflix {
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 13;
+  -ms-grid-column-span: 11;
   grid-area: netflix;
 }
 
@@ -643,6 +793,10 @@ main {
 }
 
 .final-transactions {
+  -ms-grid-row: 7;
+  -ms-grid-row-span: 9;
+  -ms-grid-column: 9;
+  -ms-grid-column-span: 15;
   grid-area: final-transactions;
   padding: var(--card-padding);
   border-radius: var(--border-radius);
@@ -669,8 +823,12 @@ table thead tr td {
 }
 
 table tbody td .transaction-type {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 table tbody tr:last-child td {
@@ -681,7 +839,8 @@ table tbody td .transaction-type .pic img {
   border-radius: 50%;
   width: 40px;
   height: 40px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 table tbody td .transaction-type .pic {
   margin-left: 10px;
@@ -729,6 +888,10 @@ table tbody .cost {
 }
 
 .general-view {
+  -ms-grid-row: 17;
+  -ms-grid-row-span: 9;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 7;
   grid-area: general-view;
   background-color: #fff;
   border-radius: var(--border-radius);
@@ -750,8 +913,12 @@ table tbody .cost {
 
 .general-view .top-budget,
 .general-view .user {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   text-align: right;
 }
 
@@ -815,17 +982,27 @@ table tbody .cost {
   border-radius: var(--border-radius);
   text-align: right;
   margin-top: 20px;
+  -webkit-transition: all 200ms;
+  -o-transition: all 200ms;
   transition: all 200ms;
 }
 
 .general-view .entertainment .enter-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .general-view .entertainment .enter-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .general-view .entertainment .enter-logo .enter-pic {
@@ -889,27 +1066,49 @@ table tbody .cost {
 
 .general-view .entertainment:hover {
   background-color: #f5f6f8;
-  box-shadow:
+  -webkit-box-shadow:
     4px 6px -1px #0000001a,
     2px 4px -1px #0000000f;
-  transform: translateY(-1px);
+          box-shadow:
+    4px 6px -1px #0000001a,
+    2px 4px -1px #0000000f;
+  -webkit-transform: translateY(-1px);
+      -ms-transform: translateY(-1px);
+          transform: translateY(-1px);
 }
 .income-vs-expences {
+  -ms-grid-row: 17;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 9;
+  -ms-grid-column-span: 7;
   grid-area: income-vs-expences;
   background-color: #fff;
   padding: var(--card-padding);
   border-radius: var(--border-radius);
   border: 1px solid var(--border-color) !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   row-gap: 100px;
 }
 
 .income-vs-expences .comparison {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .income-vs-expences .comparison .income-bg {
@@ -935,14 +1134,23 @@ table tbody .cost {
   color: rgb(100, 116, 139);
 }
 .income-vs-expences .charts {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .income-vs-expences .charts .week-chart {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: end;
-  justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .income-vs-expences .charts .week-one .week-chart .income-chart {
@@ -978,6 +1186,10 @@ table tbody .cost {
 }
 
 .account-summary {
+  -ms-grid-row: 21;
+  -ms-grid-row-span: 5;
+  -ms-grid-column: 9;
+  -ms-grid-column-span: 7;
   background-color: #fff;
   grid-area: account-summary;
   padding: var(--card-padding);
@@ -988,9 +1200,15 @@ table tbody .cost {
 .account-summary .account {
   background-color: #f9fafb;
   border: 1px solid #f3f4f6;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: var(--card-padding);
   border-radius: var(--border-radius);
   margin-top: 20px;
@@ -1004,8 +1222,12 @@ table tbody .cost {
 }
 
 .account-summary .account .bank-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .account-summary .account .bank-name .bank-logo {
   background-color: #dbeafe;
@@ -1036,6 +1258,10 @@ table tbody .cost {
   color: oklch(0.21 0.034 264.665);
 }
 .payment-methods {
+  -ms-grid-row: 17;
+  -ms-grid-row-span: 9;
+  -ms-grid-column: 17;
+  -ms-grid-column-span: 7;
   grid-area: payment-methods;
   border: 1px solid var(--border-color);
   padding: var(--card-padding);
@@ -1046,7 +1272,8 @@ table tbody .cost {
   position: relative;
   width: 100%;
   height: 210px;
-  perspective: 1000px;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
   margin-top: 15px;
   cursor: pointer;
 }
@@ -1055,19 +1282,26 @@ table tbody .cost {
   position: relative;
   width: 100%;
   height: 100%;
+  -webkit-transition: -webkit-transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  -o-transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
-  transform-style: preserve-3d;
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
 }
 
 .payment-methods .cards .visa:hover .visa-inner {
-  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
 }
 .payment-methods .cards .visa .front-card,
 .payment-methods .cards .visa .back-card {
   position: absolute;
   width: 100%;
   height: 100%;
-  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
   border-radius: var(--border-radius);
   top: 0;
   left: 0;
@@ -1076,19 +1310,27 @@ table tbody .cost {
   background-color: #404bac;
   padding: 25px;
   z-index: 2;
+  transform: translateZ(1px);
 }
 
 .payment-methods .cards .visa .back-card {
   background-color: #0d1422;
   padding: 25px;
-  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
   z-index: 1;
 }
 
 .payment-methods .cards .visa .card-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 20px;
 }
 
@@ -1098,9 +1340,15 @@ table tbody .cost {
   width: 50px;
   height: 30px;
   border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .payment-methods .cards .visa .card-top .outer .inner {
@@ -1124,8 +1372,12 @@ table tbody .cost {
 }
 
 .payment-methods .cards .visa .card-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-bottom: 25px;
 }
 
@@ -1166,13 +1418,16 @@ table tbody .cost {
   font-size: 0.72rem;
   font-weight: 700;
   border-radius: 999px;
-  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
 }
 
 .payment-methods .cards .visa .back-card .barcode {
   width: 100%;
   height: 40px;
   border-radius: 5px;
+  background-image: -webkit-gradient(linear, right top, left top, from(#292929), to(#040404));
+  background-image: -o-linear-gradient(right, #292929, #040404);
   background-image: linear-gradient(to left, #292929, #040404);
   margin-bottom: 10px;
 }
@@ -1190,8 +1445,12 @@ table tbody .cost {
   background-color: #fff;
   height: 30px;
   border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-inline: 15px;
   margin-bottom: 15px;
 }
@@ -1211,12 +1470,18 @@ table tbody .cost {
 
 .payment-methods .cards .visa .back-card .cvv {
   text-align: left;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
 }
 
 .payment-methods .cards .visa .back-card .end-cv {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
   /* margin-bottom: 10px; */
 }
 .payment-methods .cards .visa .back-card .cvv .cv {
