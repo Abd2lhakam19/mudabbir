@@ -9,7 +9,7 @@
 ::after,
 ::before {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
 }
 html {
@@ -47,7 +47,7 @@ aside {
   padding: 25px 20px;
   border-left: 1px solid #e5e7eb;
   -webkit-box-shadow: -1px -1px #e5e7eb;
-          box-shadow: -1px -1px #e5e7eb;
+  box-shadow: -1px -1px #e5e7eb;
 }
 
 .logo {
@@ -55,13 +55,19 @@ aside {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   gap: 15px;
 }
 
 .coin {
-  background-image: -webkit-gradient(linear, left top, right top, from(#3b6bf2), to(#4865e4));
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#3b6bf2),
+    to(#4865e4)
+  );
   background-image: -o-linear-gradient(left, #3b6bf2, #4865e4);
   background-image: linear-gradient(to right, #3b6bf2, #4865e4);
   width: -webkit-fit-content;
@@ -74,10 +80,10 @@ aside {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-shadow: 0px 4px 03px #3b6cf260;
-          box-shadow: 0px 4px 03px #3b6cf260;
+  box-shadow: 0px 4px 03px #3b6cf260;
 }
 
 .coin i {
@@ -108,8 +114,8 @@ nav .nav-links {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   gap: 10px;
   font-size: 16px;
   font-weight: 600;
@@ -159,8 +165,8 @@ aside h2 {
   justify-content: start;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   gap: 10px;
   /* background-color: tomato; */
   padding: 15px 0px;
@@ -173,8 +179,8 @@ aside h2 {
   background-color: #fafafa;
   border-radius: 12px;
   -webkit-transform: translateX(3px);
-      -ms-transform: translateX(3px);
-          transform: translateX(3px);
+  -ms-transform: translateX(3px);
+  transform: translateX(3px);
 }
 
 .quick-actions li .icon-wrapper {
@@ -185,11 +191,11 @@ aside h2 {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 .text-send {
   color: var(--main-color);
@@ -239,13 +245,14 @@ main {
 .container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr;
+  -ms-grid-columns: 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr
+    20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr;
   grid-template-columns: repeat(12, 1fr);
   -ms-grid-rows: auto;
   grid-template-rows: auto;
   gap: 20px;
   grid-auto-flow: row;
-      grid-template-areas:
+  grid-template-areas:
     "management-profile management-profile management-profile management-profile management-profile management-profile management-profile management-profile management-profile management-profile management-profile management-profile"
     "current-money  current-money  current-money  current-money  income income income income expences expences expences expences"
     "current-money  current-money  current-money  current-money  income income income income expences expences expences expences"
@@ -268,13 +275,20 @@ main {
   grid-area: management-profile;
   padding: 20px;
   border-radius: 12px;
-  background-image: -webkit-gradient(linear, right top, left top, from(#f5f9fd), color-stop(#fdfeff), to(#f5f9fd));
+  background-image: -webkit-gradient(
+    linear,
+    right top,
+    left top,
+    from(#f5f9fd),
+    color-stop(#fdfeff),
+    to(#f5f9fd)
+  );
   background-image: -o-linear-gradient(right, #f5f9fd, #fdfeff, #f5f9fd);
   background-image: linear-gradient(to left, #f5f9fd, #fdfeff, #f5f9fd);
   -webkit-box-shadow:
     1px 1px #e1e1e1,
     -1px -1px #d7d7d7;
-          box-shadow:
+  box-shadow:
     1px 1px #e1e1e1,
     -1px -1px #d7d7d7;
   border: 1px solid var(--border-color);
@@ -282,8 +296,8 @@ main {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .management-profile .right-side {
@@ -291,11 +305,11 @@ main {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-column-gap: 20px;
-     -moz-column-gap: 20px;
-          column-gap: 20px;
+  -moz-column-gap: 20px;
+  column-gap: 20px;
 }
 
 .management-profile .right-side .status {
@@ -328,8 +342,8 @@ main {
   display: flex;
   gap: 15px;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .management-profile .left-side .left-content {
@@ -337,8 +351,8 @@ main {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   gap: 10px;
 }
 .management-profile .left-side .left-content .icons {
@@ -346,8 +360,8 @@ main {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   gap: 10px;
 }
 .management-profile .left-side .search {
@@ -382,8 +396,8 @@ main {
   gap: 10px;
   background-color: white;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding: 10px 12px;
   border-radius: var(--border-radius);
   border: 1px solid var(--border-color);
@@ -391,12 +405,14 @@ main {
   transition: -webkit-box-shadow 500ms;
   -o-transition: box-shadow 500ms;
   transition: box-shadow 500ms;
-  transition: box-shadow 500ms, -webkit-box-shadow 500ms;
+  transition:
+    box-shadow 500ms,
+    -webkit-box-shadow 500ms;
 }
 
 .management-profile .left-side .profile-info:hover {
   -webkit-box-shadow: 0px 1px 3px #626262;
-          box-shadow: 0px 1px 3px #626262;
+  box-shadow: 0px 1px 3px #626262;
 }
 
 .management-profile .left-side .profile-info .info .name {
@@ -417,7 +433,7 @@ main {
   width: 30px;
   height: 30px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 8px;
 }
 
@@ -514,8 +530,8 @@ main {
   border-radius: var(--border-radius);
   border-left: 4px solid #2e7cfd;
   -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
   position: relative;
   margin-bottom: 10px;
 }
@@ -572,8 +588,8 @@ main {
   border-radius: var(--border-radius);
   border-left: 4px solid #73cc59;
   -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
   position: relative;
   margin-bottom: 10px;
 }
@@ -623,8 +639,8 @@ main {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   margin-bottom: 10px;
 }
 
@@ -669,13 +685,14 @@ main {
   /* height: 600px; */
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr;
+  -ms-grid-columns: 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr
+    10px 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr;
   grid-template-columns: repeat(12, 1fr);
   -ms-grid-rows: auto;
   grid-template-rows: auto;
   gap: 10px;
   grid-auto-flow: row;
-      grid-template-areas:
+  grid-template-areas:
     "internet internet internet internet internet internet electricity electricity electricity electricity electricity electricity"
     "internet internet internet internet internet internet electricity electricity electricity electricity electricity electricity"
     "phones phones phones phones phones phones netflix netflix netflix netflix netflix netflix"
@@ -692,11 +709,11 @@ main {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .internet {
@@ -828,8 +845,8 @@ table tbody td .transaction-type {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 table tbody tr:last-child td {
@@ -841,7 +858,7 @@ table tbody td .transaction-type .pic img {
   width: 40px;
   height: 40px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 table tbody td .transaction-type .pic {
   margin-left: 10px;
@@ -918,8 +935,8 @@ table tbody .cost {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   text-align: right;
 }
 
@@ -993,8 +1010,8 @@ table tbody .cost {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .general-view .entertainment .enter-logo {
@@ -1002,8 +1019,8 @@ table tbody .cost {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .general-view .entertainment .enter-logo .enter-pic {
@@ -1070,12 +1087,12 @@ table tbody .cost {
   -webkit-box-shadow:
     4px 6px -1px #0000001a,
     2px 4px -1px #0000000f;
-          box-shadow:
+  box-shadow:
     4px 6px -1px #0000001a,
     2px 4px -1px #0000000f;
   -webkit-transform: translateY(-1px);
-      -ms-transform: translateY(-1px);
-          transform: translateY(-1px);
+  -ms-transform: translateY(-1px);
+  transform: translateY(-1px);
 }
 .income-vs-expences {
   -ms-grid-row: 17;
@@ -1094,11 +1111,11 @@ table tbody .cost {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   row-gap: 100px;
 }
 
@@ -1107,11 +1124,11 @@ table tbody .cost {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .income-vs-expences .comparison .income-bg {
@@ -1141,7 +1158,7 @@ table tbody .cost {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
 }
 
 .income-vs-expences .charts .week-chart {
@@ -1149,11 +1166,11 @@ table tbody .cost {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: end;
+  -ms-flex-align: end;
+  align-items: end;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .income-vs-expences .charts .week-one .week-chart .income-chart {
@@ -1207,11 +1224,11 @@ table tbody .cost {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding: var(--card-padding);
   border-radius: var(--border-radius);
   margin-top: 20px;
@@ -1229,8 +1246,8 @@ table tbody .cost {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 .account-summary .account .bank-name .bank-logo {
   background-color: #dbeafe;
@@ -1276,7 +1293,7 @@ table tbody .cost {
   width: 100%;
   height: 210px;
   -webkit-perspective: 1000px;
-          perspective: 1000px;
+  perspective: 1000px;
   margin-top: 15px;
   cursor: pointer;
 }
@@ -1289,14 +1306,16 @@ table tbody .cost {
   transition: -webkit-transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
   -o-transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  transition:
+    transform 0.6s cubic-bezier(0.4, 0, 0.2, 1),
+    -webkit-transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
   -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
+  transform-style: preserve-3d;
 }
 
 .payment-methods .cards .visa:hover .visa-inner {
   -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 .payment-methods .cards .visa .front-card,
 .payment-methods .cards .visa .back-card {
@@ -1304,7 +1323,7 @@ table tbody .cost {
   width: 100%;
   height: 100%;
   -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
   border-radius: var(--border-radius);
   top: 0;
   left: 0;
@@ -1320,7 +1339,7 @@ table tbody .cost {
   background-color: #0d1422;
   padding: 25px;
   -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
+  transform: rotateY(180deg);
   z-index: 1;
 }
 
@@ -1329,11 +1348,11 @@ table tbody .cost {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   margin-bottom: 20px;
 }
 
@@ -1347,11 +1366,11 @@ table tbody .cost {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .payment-methods .cards .visa .card-top .outer .inner {
@@ -1379,8 +1398,8 @@ table tbody .cost {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   margin-bottom: 25px;
 }
 
@@ -1422,14 +1441,20 @@ table tbody .cost {
   font-weight: 700;
   border-radius: 999px;
   -webkit-backdrop-filter: blur(4px);
-          backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
 }
 
 .payment-methods .cards .visa .back-card .barcode {
   width: 100%;
   height: 40px;
   border-radius: 5px;
-  background-image: -webkit-gradient(linear, right top, left top, from(#292929), to(#040404));
+  background-image: -webkit-gradient(
+    linear,
+    right top,
+    left top,
+    from(#292929),
+    to(#040404)
+  );
   background-image: -o-linear-gradient(right, #292929, #040404);
   background-image: linear-gradient(to left, #292929, #040404);
   margin-bottom: 10px;
@@ -1452,8 +1477,8 @@ table tbody .cost {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding-inline: 15px;
   margin-bottom: 15px;
 }
@@ -1483,8 +1508,8 @@ table tbody .cost {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
+  -ms-flex-pack: end;
+  justify-content: end;
   /* margin-bottom: 10px; */
 }
 .payment-methods .cards .visa .back-card .cvv .cv {

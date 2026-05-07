@@ -163,27 +163,26 @@
       "payment-methods payment-methods payment-methods payment-methods payment-methods payment-methods payment-methods payment-methods payment-methods payment-methods payment-methods payment-methods"
       "payment-methods payment-methods payment-methods payment-methods payment-methods payment-methods payment-methods payment-methods payment-methods payment-methods payment-methods payment-methods";
   }
-   .final-transactions .transaction-table{
+  .final-transactions .transaction-table {
     overflow-x: auto;
     scrollbar-width: thin;
   }
-    .transaction-table table thead td,
+  .transaction-table table thead td,
   .transaction-table table tbody td .name,
   .transaction-table table tbody td .type,
   .transaction-table table tbody td .date,
   .transaction-table table tbody td .cost,
   .transaction-table table tbody td .type-tr,
   .transaction-table table tbody td .done {
-    font-size: 12px !important; 
-    line-height: 1.2; 
+    font-size: 12px !important;
+    line-height: 1.2;
   }
-  table td{
+  table td {
     white-space: nowrap;
   }
-  table{
-    min-width:500px;
+  table {
+    min-width: 500px;
   }
-
 }
 
 @media (max-width: 640px) {
@@ -208,6 +207,4 @@
   .management-profile .left-side .profile-info .info .name {
     display: none;
   }
-
- 
 }
